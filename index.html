@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Paz Berlin - Authentische Mexikanische Küche & Brunch</title>
+    <meta name="description" content="Erlebe authentisches mexikanisches Essen in Berlin Hellersdorf. Tacos, Brunch, Cocktails und das echte Mexiko-Feeling. Jetzt Tisch reservieren!" />
+    <meta name="keywords" content="Mexikanisches Restaurant Berlin, Tacos Berlin, Brunch Berlin Hellersdorf, Cocktails, La Paz Berlin, Authentisch Mexikanisch" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:title" content="La Paz Berlin - Authentische Mexikanische Küche & Brunch" />
+    <meta property="og:description" content="Dein Stück Mexiko in Berlin. Authentisches Essen, Brunch und Cocktails." />
+    <meta property="og:image" content="/media/lapaz logo.png" />
+    <meta property="og:locale" content="de_DE" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #004D38; /* Mexican Forest Green */
+        overflow-x: hidden;
+        color: #ffffff;
+      }
+      
+      /* La Paz Branding Fonts */
+      .font-lapaz-title {
+        font-family: 'Fjalla One', sans-serif;
+        text-transform: uppercase;
+      }
+      
+      .font-lapaz-text {
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 40s linear infinite;
+      }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      .nav-blur {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
