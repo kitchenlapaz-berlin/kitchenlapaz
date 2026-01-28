@@ -30,7 +30,7 @@ const ValuesSection: React.FC<ValuesSectionProps> = ({ id }) => {
       title: "UNSER",
       accent: "RESTAURANT",
       desc: "Ein Ort der Begegnung. Zentral gelegen, mit einer Terrasse für sonnige Tage und gemütlichen Ecken für lange Abende.",
-      img: "/media/Value1.jpg",
+      img: "/media/ambiente4.png",
     },
     {
       id: "02",
@@ -38,6 +38,7 @@ const ValuesSection: React.FC<ValuesSectionProps> = ({ id }) => {
       accent: "KARTE",
       desc: "Eine Reise durch die Vielfalt Mexikos. Von klassischen Tacos bis zu modernen Interpretationen – frisch zubereitet mit besten Zutaten.",
       img: "/media/Value2.jpg",
+      link: "/media/LaPaz Speisekarte (2).pdf"
     },
     {
       id: "03",
@@ -96,7 +97,14 @@ const ValuesSection: React.FC<ValuesSectionProps> = ({ id }) => {
 
                   <h2 className="font-lapaz-title text-5xl md:text-[5.5rem] font-bold leading-[0.95] uppercase tracking-tight text-[#004D38] mb-8">
                     {item.title} <br />
-                    <span className="text-[#E85E21] italic font-serif lowercase tracking-normal" style={{ fontFamily: 'Georgia, serif' }}>{item.accent.toLowerCase()}</span>
+                    {/* @ts-ignore - link property exists on some items */}
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
+                        <span className="text-[#E85E21] italic font-serif lowercase tracking-normal border-b-2 border-[#E85E21]/30 hover:border-[#E85E21]" style={{ fontFamily: 'Georgia, serif' }}>{item.accent.toLowerCase()}</span>
+                      </a>
+                    ) : (
+                      <span className="text-[#E85E21] italic font-serif lowercase tracking-normal" style={{ fontFamily: 'Georgia, serif' }}>{item.accent.toLowerCase()}</span>
+                    )}
                   </h2>
 
                   <p className="max-w-md text-[#004D38] text-base md:text-xl leading-relaxed font-lapaz-text font-light opacity-90 border-l border-[#004D38]/20 pl-6">

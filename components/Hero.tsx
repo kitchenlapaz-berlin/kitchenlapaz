@@ -42,7 +42,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
           </div>
 
           <div className="absolute top-8 left-0 font-lapaz-title text-sm uppercase tracking-[0.2em] text-[#F4B806]">
-            Desde 1990
+            Desde 1997
           </div>
 
           <div className="absolute top-8 right-0 font-lapaz-title text-sm uppercase tracking-[0.2em] text-[#F4B806]">
@@ -54,16 +54,11 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
 
 
             <div className="relative">
-              {/* Shadow/Stroke Layer */}
-              <h1 className="absolute top-2 left-2 font-lapaz-title text-[18vw] uppercase tracking-tighter text-[#000000]/50 select-none z-0 blur-sm">
-                LA PAZ
-              </h1>
-              {/* Main Text Layer - Green Fill, Gold Outline */}
+              {/* Main Text Layer - Green Fill, Gold Outline - Clean, No Shadow */}
               <h1
-                className="relative z-10 font-lapaz-title text-[18vw] uppercase tracking-tighter text-[#009B77] drop-shadow-xl"
+                className="relative z-10 font-lapaz-title text-[18vw] uppercase tracking-tighter text-[#009B77]"
                 style={{
-                  WebkitTextStroke: '4px #F4B806',
-                  textShadow: '6px 6px 0px #003323'
+                  WebkitTextStroke: '4px #F4B806'
                 }}
               >
                 LA PAZ
@@ -108,7 +103,7 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
 
           {/* Top Row */}
           <div className="w-full flex justify-between items-start">
-            <span className="font-lapaz-text font-bold text-xs uppercase tracking-widest text-[#F4B806]">Est. 1990</span>
+            <span className="font-lapaz-text font-bold text-xs uppercase tracking-widest text-[#F4B806]">Est. 1997</span>
             <span className="font-lapaz-text font-bold text-xs uppercase tracking-widest text-[#F4B806]">Berlin</span>
           </div>
 
@@ -117,14 +112,13 @@ const Hero: React.FC<HeroProps> = ({ id }) => {
             <h1
               className="font-lapaz-title text-[28vw] leading-[0.9] tracking-tighter uppercase text-center text-[#009B77]"
               style={{
-                WebkitTextStroke: '2px #F4B806',
-                textShadow: '4px 4px 0px #003323'
+                WebkitTextStroke: '2px #F4B806'
               }}
             >
               LA PAZ
             </h1>
 
-            <div className="mt-6 bg-[#E85E21] px-6 py-2 rounded-sm transform -rotate-2 shadow-lg">
+            <div className="mt-6 bg-[#E85E21] px-6 py-2 rounded-sm transform shadow-lg">
               <span className="font-lapaz-title text-white text-lg tracking-wide uppercase">Mexican Food</span>
             </div>
           </div>

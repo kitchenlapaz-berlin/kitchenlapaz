@@ -21,7 +21,7 @@ const BrunchSection: React.FC<BrunchSectionProps> = ({ id, onOpenReservation }) 
                     <div className="order-2 md:order-1">
                         <div className="flex items-center space-x-3 mb-4">
                             <span className="w-12 h-0.5 bg-[#E85E21]"></span>
-                            <span className="font-lapaz-title text-[#E85E21] uppercase tracking-[0.2em] text-sm font-bold">Jeden Tag</span>
+                            <span className="font-lapaz-title text-[#E85E21] uppercase tracking-[0.2em] text-sm font-bold">Jeden Sonntag</span>
                         </div>
 
                         <h2 className="font-lapaz-title text-6xl md:text-8xl uppercase tracking-tighter leading-[0.9] mb-8 text-[#004D38]">
@@ -40,7 +40,7 @@ const BrunchSection: React.FC<BrunchSectionProps> = ({ id, onOpenReservation }) 
 
                             <div className="flex flex-col space-y-4 relative z-10">
                                 <div className="flex justify-between items-baseline border-b border-[#F4B806]/30 pb-4">
-                                    <span className="font-lapaz-title text-2xl uppercase tracking-wide">Täglich</span>
+                                    <span className="font-lapaz-title text-2xl uppercase tracking-wide">Sonntags</span>
                                     <span className="font-lapaz-title text-xl text-[#F4B806]">10:00 — 14:00</span>
                                 </div>
 

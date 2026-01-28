@@ -37,9 +37,18 @@ const FooterSection: React.FC<FooterSectionProps> = ({ id }) => {
             </p>
 
             <div className="flex space-x-4">
-              {["Instagram", "TikTok"].map(social => (
-                <a key={social} href="#" className="font-lapaz-title text-xs font-bold text-[#F4B806] hover:text-white transition-colors uppercase tracking-widest border-b border-[#F4B806] pb-1 hover:border-white">
-                  {social}
+              {[
+                { name: "Instagram", url: "https://www.instagram.com/lapaz.bln/" },
+                { name: "TikTok", url: "https://www.tiktok.com/@lapazberlin" }
+              ].map(social => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-lapaz-title text-xs font-bold text-[#F4B806] hover:text-white transition-colors uppercase tracking-widest border-b border-[#F4B806] pb-1 hover:border-white"
+                >
+                  {social.name}
                 </a>
               ))}
             </div>
@@ -144,8 +153,14 @@ const FooterSection: React.FC<FooterSectionProps> = ({ id }) => {
               {legalModal === 'imprint' ? (
                 <>
                   <p className="mb-4">Angaben gemäß § 5 TMG</p>
-                  <p className="mb-2"><strong>La Paz Berlin</strong><br />Kurt-Weill-Gasse 7<br />12627 Berlin</p>
+                  <p className="mb-2">
+                    <strong>Restaurant La Paz</strong><br />
+                    Ahmad Niknam<br />
+                    Kurt-Weill-Gasse 7<br />
+                    12627 Berlin
+                  </p>
                   <p className="mb-2"><strong>Kontakt:</strong><br />Telefon: 030 99498458<br />E-Mail: kitchenlapaz@gmail.com</p>
+                  <p className="mb-2"><strong>Steuernummer:</strong><br />33/456/00511</p>
                 </>
               ) : (
                 <>

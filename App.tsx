@@ -10,6 +10,7 @@ import ReviewSection from './components/ReviewSection.tsx';
 import FooterSection from './components/FooterSection.tsx';
 import FloatingNavbar from './components/FloatingNavbar.tsx';
 import ReservationModal from './components/ReservationModal.tsx';
+import CookieConsent from './components/CookieConsent.tsx';
 
 const App: React.FC = () => {
   const [isReservationOpen, setIsReservationOpen] = useState(false);
@@ -32,6 +33,7 @@ const App: React.FC = () => {
         isOpen={isReservationOpen}
         onClose={() => setIsReservationOpen(false)}
       />
+      <CookieConsent />
     </div>
   );
 };
