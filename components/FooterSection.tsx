@@ -109,7 +109,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ id }) => {
                 T. 030 99498458
               </a>
               <a href="mailto:kitchenlapaz@gmail.com" className="font-lapaz-text text-sm text-[#F4B806] hover:text-white transition-colors opacity-90 tracking-wider">
-                kitchenlapaz@gmail.com
+                info@la-paz-berlin.de
               </a>
             </div>
           </div>
