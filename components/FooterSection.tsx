@@ -159,7 +159,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ id }) => {
                     Kurt-Weill-Gasse 7<br />
                     12627 Berlin
                   </p>
-                  <p className="mb-2"><strong>Kontakt:</strong><br />Telefon: 030 99498458<br />E-Mail: kitchenlapaz@gmail.com</p>
+                  <p className="mb-2"><strong>Kontakt:</strong><br />Telefon: 030 99498458<br />E-Mail: info@la-paz-berlin.de</p>
                   <p className="mb-2"><strong>Steuernummer:</strong><br />33/456/00511</p>
                 </>
               ) : (
